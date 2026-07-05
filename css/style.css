@@ -7059,6 +7059,24 @@ header .header-top-bar .widget {
 header .header-top-bar .widget i {
   padding-right: 5px;
 }
+
+/* Custom overrides: increase logo sizes for ATP Learning Hub */
+header .navbar-brand img {
+  max-height: 100px !important;
+  height: auto !important;
+}
+header .navbar-brand .mobile-logo {
+  max-height: 72px !important;
+}
+@media (max-width: 991px) {
+  header .navbar-brand img {
+    max-height: 72px !important;
+  }
+  header .navbar-brand .mobile-logo {
+    max-height: 56px !important;
+  }
+}
+
 header .header-top-bar .header-icon .header-social-icon {
   top: 0;
 }
