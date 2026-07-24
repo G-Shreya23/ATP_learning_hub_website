@@ -19728,6 +19728,41 @@
   header.sticky .responsive-sticky .navbar-toggler {
     margin: 20px 0;
   }
+
+/* ATP logo final overrides: ensure logo is visible and sized across breakpoints */
+header .navbar-brand .default-logo,
+header .navbar-brand .alt-logo {
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: auto !important;
+}
+header .navbar-brand .default-logo {
+  max-height: 100px !important;
+  height: auto !important;
+  width: auto !important;
+}
+header .navbar-brand .mobile-logo {
+  max-height: 72px !important;
+  height: auto !important;
+}
+footer .footer-logo img {
+  width: 200px !important;
+  height: auto !important;
+}
+@media (max-width: 991px) {
+  header .navbar-brand .default-logo,
+  header .navbar-brand .alt-logo {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+  }
+  header .navbar-brand .mobile-logo {
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-height: 56px !important;
+    width: auto !important;
+  }
+}
   header .header-top-bar .row {
     margin: 0;
   }

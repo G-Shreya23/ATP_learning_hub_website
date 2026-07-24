@@ -7,6 +7,16 @@
         <meta name="author" content="ThemeZaa">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
+        <meta name="keywords" content="SAP training, SAP certification, SAP courses, SAP education, SAP learning hub, SAP S/4HANA, SAP FICO, SAP MM, SAP SD, SAP SuccessFactors, SAP Ariba, SAP HCM">
+        <meta property="og:title" content="ATP Learning Hub | SAP Training & Certification Courses">
+        <meta property="og:description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
+        <meta property="og:image" content="images/new/logo.png">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="ATP Learning Hub | SAP Training & Certification Courses">
+        <meta name="twitter:description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
+        <meta name="twitter:image" content="images/new/logo.png">
+        <meta itemprop="image" content="images/new/logo.png">
         <!-- favicon icon -->
         <link rel="shortcut icon" href="images/favicon.png">
         <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
@@ -21,11 +31,39 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
         <link rel="stylesheet" href="demos/hosting/hosting.css" />
+        <style>
+            .mega-menu { border-radius: 10px !important; box-shadow: 0 24px 40px rgba(0,0,0,0.09) !important; }
+            .mega-menu button.course-tab-button { font-size: 14px !important; padding: 10px 0 !important; line-height: 1.2 !important; }
+            .mega-menu button.course-tab-button.active { background: rgba(15, 43, 111, 0.08) !important; color: #0f1b4c !important; border-radius: 10px !important; }
+            .mega-menu button.course-tab-button span { transition: transform .2s ease; }
+            .mega-menu button.course-tab-button.active span:last-child { transform: rotate(90deg); }
+            .mega-menu a { padding: 12px 14px !important; border-radius: 10px !important; gap: 10px !important; min-height: 68px !important; }
+            .mega-menu a span:first-child { width: 36px !important; height: 36px !important; min-width: 36px !important; font-size: 14px !important; }
+            .mega-menu a span:last-child { font-size: 13px !important; }
+            .mega-menu .course-heading { font-size: 16px !important; margin-bottom: 16px !important; }
+            .mega-menu .collapse > div { max-height: 420px !important; overflow-y: auto !important; }
+            .dropdown-menu.course-dropdown { margin-top: -12px !important; }
+            .navbar .dropdown-menu.course-dropdown { margin-top: -12px !important; }
+        </style>
+        <style>
+            .mega-menu { border-radius: 10px !important; box-shadow: 0 24px 40px rgba(0,0,0,0.09) !important; }
+            .mega-menu button.course-tab-button { font-size: 14px !important; padding: 10px 0 !important; line-height: 1.2 !important; }
+            .mega-menu button.course-tab-button.active { background: rgba(15, 43, 111, 0.08) !important; color: #0f1b4c !important; border-radius: 10px !important; }
+            .mega-menu button.course-tab-button span { transition: transform .2s ease; }
+            .mega-menu button.course-tab-button.active span:last-child { transform: rotate(90deg); }
+            .mega-menu a { padding: 12px 14px !important; border-radius: 10px !important; gap: 10px !important; min-height: 68px !important; }
+            .mega-menu a span:first-child { width: 36px !important; height: 36px !important; min-width: 36px !important; font-size: 14px !important; }
+            .mega-menu a span:last-child { font-size: 13px !important; }
+            .mega-menu .course-heading { font-size: 16px !important; margin-bottom: 16px !important; }
+            .mega-menu .collapse > div { max-height: 420px !important; overflow-y: auto !important; }
+            .dropdown-menu.course-dropdown { margin-top: -12px !important; }
+            .navbar .dropdown-menu.course-dropdown { margin-top: -12px !important; }
+        </style>
     </head>
     <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="">  
         <!-- start header --> 
         <header class="header-with-topbar">
-            <div class="header-top-bar top-bar-dark cover-background" style="background-image: url('images/demo-hosting-header-bg.jpg')">
+            <!-- <div class="header-top-bar top-bar-dark cover-background" style="background-image: url('images/demo-hosting-header-bg.jpg')">
                 <div class="container-fluid">
                     <div class="row h-42px align-items-center m-0">
                         <div class="col-md-7 text-center text-md-start">
@@ -33,19 +71,19 @@
                         </div>
                         <div class="col-5 text-end d-none d-md-flex">
                             <a href="demo-hosting-contact.html" class="widget fs-13 me-20px text-white opacity-8 d-none d-lg-inline-block"><i class="feather icon-feather-phone"></i>Customer service</a> 
-                            <a href="mailto:support@domain.com" class="widget fs-13 text-white text-white-hover opacity-8"><i class="feather icon-feather-mail text-white position-relative top-1px"></i>support@domain.com</a>
+                            <a href="mailto:atplearninghub@gmail.com" class="widget fs-13 text-white text-white-hover opacity-8"><i class="feather icon-feather-mail text-white position-relative top-1px"></i>atplearninghub@gmail.com</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- start navigation -->
             <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse" data-header-hover="light">
                 <div class="container-fluid">
                     <div class="col-auto col-lg-2 me-lg-0 me-auto">
                         <a class="navbar-brand" href="demo-hosting.html">
-                            <img src="images/demo-hosting-logo-white.png" data-at2x="images/demo-hosting-logo-white@2x.png" alt="" class="default-logo">
-                            <img src="images/demo-hosting-logo-black.png" data-at2x="images/demo-hosting-logo-black@2x.png" alt="" class="alt-logo">
-                            <img src="images/demo-hosting-logo-black.png" data-at2x="images/demo-hosting-logo-black@2x.png" alt="" class="mobile-logo"> 
+                            <img src="images/new/logo.png" data-at2x="images/new/logo.png" alt="" class="default-logo" style="width:160px;height:auto;">
+                            <img src="images/new/logo.png" data-at2x="images/new/logo.png" alt="" class="alt-logo" style="width:160px;height:auto;">
+                            <img src="images/new/logo.png" data-at2x="images/new/logo.png" alt="" class="mobile-logo" style="width:120px;height:auto;"> 
                         </a>
                     </div>
                     <div class="col-auto menu-order position-static">
@@ -59,16 +97,218 @@
                             <ul class="navbar-nav"> 
                                 <li class="nav-item"><a href="demo-hosting.html" class="nav-link">Home</a></li>
                                 <li class="nav-item"><a href="demo-hosting-about.html" class="nav-link">About</a></li>
-                                <li class="nav-item"><a href="demo-hosting-hosting.html" class="nav-link">Hosting</a></li>
-                                <li class="nav-item"><a href="demo-hosting-domain.html" class="nav-link">Domain</a></li>
-                                <li class="nav-item"><a href="demo-hosting-pricing.html" class="nav-link">Pricing</a></li>
-                                <li class="nav-item"><a href="demo-hosting-support.html" class="nav-link">Support</a></li>
+                                <li class="nav-item dropdown" data-bs-auto-close="outside">
+                                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                                    <div class="dropdown-menu course-dropdown" aria-labelledby="coursesDropdown" style="min-width: 980px; max-width: calc(100vw - 40px); padding: 0; border: none; background: transparent;">
+                                        <div class="submenu-content" style="padding: 0;">
+                                            <div class="mega-menu" style="display: flex; width: 100%; min-width: 980px; background: #fff; box-shadow: 0 24px 40px rgba(0,0,0,0.09); border-radius: 10px; overflow: hidden;">
+                                                <div style="width: 260px; min-width: 260px; background: #f6f8ff; border-right: 1px solid #e6edf8; padding: 18px 16px;">
+                                                    <div style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #1b2d66; font-weight: 700; margin-bottom: 16px;">Course Area</div>
+                                                    <div style="font-size: 20px; font-weight: 700; color: #0f1b4c; margin-bottom: 28px;">SAP</div>
+                                                    <div style="display: grid; gap: 8px;">
+                                                        <button type="button" class="course-tab-button" data-bs-toggle="collapse" data-bs-target="#tab-technical" aria-expanded="true" aria-controls="tab-technical" style="width:100%; display:flex; align-items:center; justify-content:space-between; background:none; border:none; color:#0f1b4c; text-align:left; font-size:15px; font-weight:600; padding:12px 0; cursor:pointer;">Technical<span style="font-size:18px; color:#0f1b4c;">›</span></button>
+                                                        <button type="button" class="course-tab-button" data-bs-toggle="collapse" data-bs-target="#tab-finance" aria-expanded="false" aria-controls="tab-finance" style="width:100%; display:flex; align-items:center; justify-content:space-between; background:none; border:none; color:#0f1b4c; text-align:left; font-size:15px; font-weight:600; padding:12px 0; cursor:pointer;">Finance<span style="font-size:18px; color:#0f1b4c;">›</span></button>
+                                                        <button type="button" class="course-tab-button" data-bs-toggle="collapse" data-bs-target="#tab-digital" aria-expanded="false" aria-controls="tab-digital" style="width:100%; display:flex; align-items:center; justify-content:space-between; background:none; border:none; color:#0f1b4c; text-align:left; font-size:15px; font-weight:600; padding:12px 0; cursor:pointer;">Digital Supply Chain<span style="font-size:18px; color:#0f1b4c;">›</span></button>
+                                                        <button type="button" class="course-tab-button" data-bs-toggle="collapse" data-bs-target="#tab-people" aria-expanded="false" aria-controls="tab-people" style="width:100%; display:flex; align-items:center; justify-content:space-between; background:none; border:none; color:#0f1b4c; text-align:left; font-size:15px; font-weight:600; padding:12px 0; cursor:pointer;">People Engagement<span style="font-size:18px; color:#0f1b4c;">›</span></button>
+                                                        <button type="button" class="course-tab-button" data-bs-toggle="collapse" data-bs-target="#tab-advanced" aria-expanded="false" aria-controls="tab-advanced" style="width:100%; display:flex; align-items:center; justify-content:space-between; background:none; border:none; color:#0f1b4c; text-align:left; font-size:15px; font-weight:600; padding:12px 0; cursor:pointer;">Advanced<span style="font-size:18px; color:#0f1b4c;">›</span></button>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1 1 auto; padding: 30px; min-height: 100%; border-left: 2px solid #d9eefb;">
+                                                    <div id="coursesTabSections">
+                                                        <div id="tab-sap" class="collapse show" data-bs-parent="#coursesTabSections">
+                                                            <div style="font-size: 18px; font-weight: 700; color: #0f1b4c; margin-bottom: 20px;">SAP Courses</div>
+                                                            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-height: 520px; overflow-y: auto; padding-right: 6px;">
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">S</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP SAC Training</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">T</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP TRM Training</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">A</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP ARIBA Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">F</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP FICO End User Training for Career Boost</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">S</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP SuccessFactors – Employee Central Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">H</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP HCM in SAP S/4HANA</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">P</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP PM Training & Certification Course – S/4HANA Asset Management</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">U</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP UI5 FIORI – Admin Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">B</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP BASIS Course on HANA | Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">A</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP ABAP Training & Certification Course</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">P</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP PP Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">P</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP PS Training & Certification Course</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">E</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP EWM Training & Certification Course</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">Q</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP QM Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">M</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP MM Training & Certification Course</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">D</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP SD Training & Certification Course</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">C</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP CO Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 14px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 80px;">
+                                                                    <span style="width:40px; height:40px; min-width:40px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:16px;">I</span>
+                                                                    <span style="font-size: 14px; font-weight: 600; line-height: 1.4;">SAP FI Certification Training Course</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-technical" class="collapse" data-bs-parent="#coursesTabSections">
+                                                            <div style="font-size: 18px; font-weight: 700; color: #0f1b4c; margin-bottom: 20px;">Technical</div>
+                                                            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-height: 520px; overflow-y: auto; padding-right: 6px;">
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">U</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP UI5 FIORI – Admin Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">B</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP BASIS Course on HANA | Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">A</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP ABAP Training & Certification Course</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-finance" class="collapse" data-bs-parent="#coursesTabSections">
+                                                            <div style="font-size: 18px; font-weight: 700; color: #0f1b4c; margin-bottom: 20px;">Finance</div>
+                                                            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-height: 520px; overflow-y: auto; padding-right: 6px;">
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">T</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP TRM Training</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">F</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP FICO End User Training for Career Boost</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">C</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP CO Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">I</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP FI Certification Training Course</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-digital" class="collapse" data-bs-parent="#coursesTabSections">
+                                                            <div style="font-size: 18px; font-weight: 700; color: #0f1b4c; margin-bottom: 20px;">Digital Supply Chain</div>
+                                                            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-height: 520px; overflow-y: auto; padding-right: 6px;">
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">A</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP ARIBA Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">P</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP PM Training & Certification Course – S/4HANA Asset Management</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">P</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP PP Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">P</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP PS Training & Certification Course</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">E</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP EWM Training & Certification Course</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">Q</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP QM Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">M</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP MM Training & Certification Course</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">D</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP SD Training & Certification Course</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-people" class="collapse" data-bs-parent="#coursesTabSections">
+                                                            <div style="font-size: 18px; font-weight: 700; color: #0f1b4c; margin-bottom: 20px;">People Engagement</div>
+                                                            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-height: 520px; overflow-y: auto; padding-right: 6px;">
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">S</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP SuccessFactors – Employee Central Training & Certification</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">H</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP HCM in SAP S/4HANA</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-advanced" class="collapse" data-bs-parent="#coursesTabSections">
+                                                            <div style="font-size: 18px; font-weight: 700; color: #0f1b4c; margin-bottom: 20px;">Advanced</div>
+                                                            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-height: 520px; overflow-y: auto; padding-right: 6px;">
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">S</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP SAC Training</span>
+                                                                </a>
+                                                                <a href="demo-hosting-hosting.html" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 20px; border: 1px solid #eef0f4; text-decoration: none; color: #0f1b4c; background: #fff; min-height: 90px;">
+                                                                    <span style="width:46px; height:46px; min-width:46px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#0f1b4c; color:#fff; font-size:18px;">B</span>
+                                                                    <span style="font-size: 15px; font-weight: 600; line-height: 1.4;">SAP TRM Training</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- <li class="nav-item"><a href="demo-hosting-hosting.html" class="nav-link">ATP Learning Hub</a></li> -->
+                                <li class="nav-item"><a href="demo-hosting-domain.html" class="nav-link">Testimonials</a></li>
+                                <li class="nav-item"><a href="demo-hosting-pricing.html" class="nav-link">Recruitment</a></li>
+                                <li class="nav-item"><a href="demo-hosting-support.html" class="nav-link">FAQ</a></li>
                                 <li class="nav-item"><a href="demo-hosting-contact.html" class="nav-link">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-auto col-lg-2 text-end lg-pe-5px">
-                        <div class="header-icon">
+                        <!-- <div class="header-icon">
                             <div class="header-search-icon icon d-none d-sm-flex">
                                 <a href="#" class="search-form-icon header-search-form"><i class="align-middle feather icon-feather-search fs-18 me-5px xl-me-0"></i><span class="align-middle d-none d-xxl-inline-block"> Search</span></a> 
                                 <div class="search-form-wrapper">
@@ -91,7 +331,7 @@
                                     </span>
                                 </a>
                             </div>
-                        </div>  
+                        </div>   -->
                     </div>
                 </div>
             </nav>
@@ -99,15 +339,15 @@
         </header>
         <!-- end header -->
         <!-- start page title -->
-        <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin cover-background md-py-0" style="background-image: url(https://placehold.co/1920x650)"> 
+        <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin cover-background md-py-0" style="background-image: url('images/demo-hosting-home-bg.jpg')"> 
             <div class="container">
                 <div class="row align-items-center small-screen">
                     <div class="col-lg-5 col-sm-7 position-relative page-title-extra-small">
                         <h1 class="mb-15px text-white opacity-7 fw-300 overflow-hidden">
-                            <span class="d-inline-block" data-anime='{ "translateY": [30, 0], "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "staggervalue": 300 }'>About crafto hosting</span>
+                            <span class="d-inline-block" data-anime='{ "translateY": [30, 0], "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "staggervalue": 300 }'>About ATP Learning Hub</span>
                         </h1>
                         <h2 class="m-auto pb-5px pt-5px text-white fw-600 ls-minus-1px overflow-hidden">
-                            <span class="d-inline-block" data-anime='{ "translateY": [30, 0], "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "staggervalue": 300, "delay": 200 }'>Empower our community</span>
+                            <span class="d-inline-block" data-anime='{ "translateY": [30, 0], "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "staggervalue": 300, "delay": 200 }'>Authorized SAP education and adoption partner</span>
                         </h2>
                     </div> 
                 </div>
@@ -119,12 +359,13 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-6 col-md-10 md-mb-50px animation-float" data-anime='{ "effect": "slide", "color": "#ffffff", "direction":"lr", "easing": "easeOutQuad", "delay":50}'> 
-                        <img class="w-100" src="https://placehold.co/619x514" alt="">
+                        <img class="w-100" src="images/demo-hosting-home-02.png" alt="ATP Learning Hub overview">
                     </div>
                     <div class="col-xl-5 offset-xl-1 col-lg-6" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="text-base-color fw-600 mb-15px text-uppercase d-block">Simple and intuitive</span>
-                        <h2 class="fw-700 text-dark-gray ls-minus-1px">Secure & reliable hosting company.</h2>
-                        <p class="w-95 lg-w-100 mb-30px">Lorem ipsum dolor sit amet consectetur adipiscing do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <span class="text-base-color fw-600 mb-15px text-uppercase d-block">Why Atos</span>
+                        <h2 class="fw-700 text-dark-gray ls-minus-1px">Over 23+ years of SAP education excellence</h2>
+                        <p class="w-95 lg-w-100 mb-25px">With over 23+ years of unrivaled industry experience in delivering SAP education services, we believe in providing advanced knowledge and skills to our customers. We understand how swiftly the SAP market has evolved and is progressing.</p>
+                        <p class="w-95 lg-w-100 mb-30px">Ensuring the highest quality of service delivery, we have trained and certified students and professionals from all across the world. Our advanced training facilities and latest teaching methodology ensure that candidates learn more effectively without worrying about network speed, connectivity issues, voice breaks or delays.</p>
                         <div class="mb-40px">
                             <div class="col icon-with-text-style-08 mb-15px">
                                 <div class="feature-box feature-box-left-icon-middle bg-very-light-gray border-radius-5px pt-15px pb-15px ps-25px pe-25px">
@@ -132,7 +373,17 @@
                                         <i class="fa-solid fa-check fs-11 text-white"></i> 
                                     </div>
                                     <div class="feature-box-content"> 
-                                        <span class="d-block fs-17 text-dark-gray fw-500 ls-minus-05px">Easy way to broadcast the content on website.</span>
+                                        <span class="d-block fs-17 text-dark-gray fw-500 ls-minus-05px">Classroom, online and self-learning modes for flexible SAP learning.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col icon-with-text-style-08 mb-15px">
+                                <div class="feature-box feature-box-left-icon-middle bg-very-light-gray border-radius-5px pt-15px pb-15px ps-25px pe-25px">
+                                    <div class="feature-box-icon feature-box-icon-rounded w-25px h-25px rounded-circle bg-base-color box-shadow-large me-10px">
+                                        <i class="fa-solid fa-check fs-11 text-white"></i> 
+                                    </div>
+                                    <div class="feature-box-content"> 
+                                        <span class="d-block fs-17 text-dark-gray fw-500 ls-minus-05px">Training designed for aspiring and experienced SAP consultants and end users.</span>
                                     </div>
                                 </div>
                             </div>
@@ -142,14 +393,14 @@
                                         <i class="fa-solid fa-check fs-11 text-white"></i> 
                                     </div>
                                     <div class="feature-box-content"> 
-                                        <span class="d-block fs-17 text-dark-gray fw-500 ls-minus-05px">Secure way to keep your data under a account.</span>
+                                        <span class="d-block fs-17 text-dark-gray fw-500 ls-minus-05px">Advanced facilities and practical learning for certification success.</span>
                                     </div>
                                 </div>
                             </div>
                         </div>  
                         <a href="demo-hosting-hosting.html" class="btn btn-large btn-dark-gray btn-rounded btn-switch-text btn-box-shadow">
                             <span>
-                                <span class="btn-double-text" data-text="Get started now">Hosting services</span>
+                                <span class="btn-double-text" data-text="Explore SAP courses">Explore SAP courses</span>
                                 <span><i class="feather icon-feather-arrow-right"></i></span>
                             </span>
                         </a>
@@ -163,74 +414,26 @@
             <div class="container"> 
                 <div class="row justify-content-center mb-3">
                     <div class="col-12 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <h2 class="fw-700 text-dark-gray ls-minus-1px mb-25px d-block">Business timeline</h2>  
+                        <h2 class="fw-700 text-dark-gray ls-minus-1px mb-25px d-block">We offer learning in all available modes</h2>  
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center g-0" data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <!-- start process step item -->
-                    <div class="col process-step-style-06 text-center last-paragraph-no-margin hover-box md-mb-50px">
-                        <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2010</h4>
-                        <div class="process-step-icon-box position-relative mt-25px mb-25px">
-                            <span class="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
-                            <div class="step-box d-flex align-items-center justify-content-center bg-white box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
-                                <span class="w-8px h-8px bg-base-color border-radius-100"></span>
-                            </div>
+                <div class="row g-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="bg-white border border-color-extra-medium-gray border-radius-6px p-30px h-100 box-shadow-medium">
+                            <h4 class="fw-700 text-dark-gray mb-15px">Classroom training</h4>
+                            <p>Hands-on instructor-led sessions held in a professional SAP learning environment.</p>
                         </div>
-                        <span class="d-inline-block alt-font fw-600 text-dark-gray fs-18 mb-5px ls-minus-05px">Business founded</span>
-                        <p class="w-75 sm-w-85 d-inline-block ">Lorem ipsum is simply text of the printing typesetting.</p>
                     </div>
-                    <!-- end process step item -->
-                    <!-- start process step item -->
-                    <div class="col process-step-style-06 text-center last-paragraph-no-margin hover-box md-mb-50px">
-                        <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2014</h4>
-                        <div class="process-step-icon-box position-relative mt-25px mb-25px">
-                            <span class="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
-                            <div class="step-box d-flex align-items-center justify-content-center bg-white box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
-                                <span class="w-8px h-8px bg-base-color border-radius-100"></span>
-                            </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="bg-white border border-color-extra-medium-gray border-radius-6px p-30px h-100 box-shadow-medium">
+                            <h4 class="fw-700 text-dark-gray mb-15px">Online training</h4>
+                            <p>Live virtual classes with expert guidance and interactive practice from anywhere.</p>
                         </div>
-                        <span class="d-inline-block alt-font fw-600 text-dark-gray fs-18 mb-5px ls-minus-05px">Build new office</span>
-                        <p class="w-75 sm-w-85 d-inline-block ">Lorem ipsum is simply text of the printing typesetting.</p>
                     </div>
-                    <!-- end process step item -->
-                    <!-- start process step item -->
-                    <div class="col process-step-style-06 text-center last-paragraph-no-margin hover-box xs-mb-50px">
-                        <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2016</h4>
-                        <div class="process-step-icon-box position-relative mt-25px mb-25px">
-                            <span class="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
-                            <div class="step-box d-flex align-items-center justify-content-center bg-white box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
-                                <span class="w-8px h-8px bg-base-color border-radius-100"></span>
-                            </div>
-                        </div>
-                        <span class="d-inline-block alt-font fw-600 text-dark-gray fs-18 mb-5px ls-minus-05px">Relocates headquarter</span>
-                        <p class="w-75 sm-w-85 d-inline-block ">Lorem ipsum is simply text of the printing typesetting.</p>
-                    </div>
-                    <!-- end process step item -->
-                    <!-- start process step item -->
-                    <div class="col process-step-style-06 text-center last-paragraph-no-margin hover-box">
-                        <h4 class="d-block text-dark-gray mb-0 fw-700 ls-minus-2px">2020</h4>
-                        <div class="process-step-icon-box position-relative mt-25px mb-25px">
-                            <span class="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
-                            <div class="step-box d-flex align-items-center justify-content-center bg-white box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
-                                <span class="w-8px h-8px bg-base-color border-radius-100"></span>
-                            </div>
-                        </div>
-                        <span class="d-inline-block alt-font fw-600 text-dark-gray fs-18 mb-5px ls-minus-05px">Revenue of millions</span>
-                        <p class="w-75 sm-w-85 d-inline-block ">Lorem ipsum is simply text of the printing typesetting.</p>
-                    </div>
-                    <!-- end process step item -->
-                </div>
-                <div class="row justify-content-center mt-6 xs-mt-12" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <div class="col-xl-8 col-lg-10">
-                        <div class="row align-items-center justify-content-center bg-yellow border-radius-100px sm-border-radius-6px p-15px sm-p-20px sm-mx-0">
-                            <div class="col-lg-6 border-end border-color-transparent-dark-very-light text-center ls-minus-05px align-items-center d-flex justify-content-center md-border-end-0 md-mb-10px">
-                                <i class="fa-regular fa-face-smile text-dark-gray icon-extra-medium me-10px"></i>
-                                <span class="text-dark-gray fs-18 fw-600 text-start lh-28">Join the <span class="fw-700">10000+</span> clients trusting us</span>
-                            </div>
-                            <div class="col-lg-6 text-center ls-minus-05px align-items-center d-flex justify-content-center">
-                                <i class="bi bi-star text-dark-gray icon-extra-medium me-10px"></i>
-                                <span class="text-dark-gray fs-18 fw-600 text-start lh-28">4.9 out of 5 - <span class="fw-700">8549</span> Total reviews</span>
-                            </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="bg-white border border-color-extra-medium-gray border-radius-6px p-30px h-100 box-shadow-medium">
+                            <h4 class="fw-700 text-dark-gray mb-15px">Self-learning</h4>
+                            <p>Flexible study access with curated SAP content to fit individual pace and availability.</p>
                         </div>
                     </div>
                 </div>
@@ -238,24 +441,21 @@
         </section>
         <!-- end section -->
         <!-- start section -->
-        <section class="cover-background" style="background-image: url('https://placehold.co/1920x610')"> 
+        <section class="cover-background" style="background-image: url('images/demo-hosting-home-03.jpg')"> 
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10 text-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <div class="d-inline-block mb-45px sm-mb-25px">
-                            <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="position-relative bg-white d-inline-block text-center rounded-circle video-icon-box video-icon-large popup-youtube">
+                            <a href="mailto:atplearninghub@gmail.com" class="position-relative bg-white d-inline-block text-center rounded-circle video-icon-box video-icon-large">
                                 <span>
                                     <span class="video-icon">
-                                        <i class="fa-solid fa-play text-base-color"></i> 
-                                        <span class="video-icon-sonar">
-                                            <span class="video-icon-sonar-bfr bg-white"></span>
-                                        </span>
-                                    </span> 
+                                        <i class="fa-solid fa-envelope text-base-color"></i> 
+                                    </span>
                                 </span>
                             </a>
                         </div>
-                        <h2 class="text-white fw-700 ls-minus-1px mb-0">Are you ready for better productive business?</h2>
-                        <span class="d-block text-white opacity-5 text-uppercase mt-20px">We're a trusted sources of web hosting</span>
+                        <h2 class="text-white fw-700 ls-minus-1px mb-0">Let's talk about how we can transform your skills!</h2>
+                        <span class="d-block text-white opacity-5 text-uppercase mt-20px">Call us 9916223220 or email atplearninghub@gmail.com</span>
                     </div>
                 </div>
             </div>
@@ -268,7 +468,7 @@
                     <div class="col-xl-5 col-lg-7 col-md-8 position-relative text-center text-xl-start lg-mb-15px" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <span class="text-base-color fw-600 mb-15px text-uppercase d-block">Client feedback</span>
                         <h3 class="alt-font fw-700 ls-minus-1px text-dark-gray mb-20px mx-auto">What do people say about our services?</h3>
-                        <div class="d-block mb-30px fs-18 ls-minus-05px">See our 437 reviews on <img src="https://placehold.co/112x28" class="align-middle position-relative top-minus-2px" alt=""></div>
+                        <div class="d-block mb-30px fs-18 ls-minus-05px">See our 437 reviews on <img src="images/logo-envato.svg" class="align-middle position-relative top-minus-2px" alt="Envato"></div>
                         <div class="d-flex justify-content-center justify-content-xl-start">
                             <!-- start slider navigation -->
                             <div class="slider-one-slide-prev-1 text-dark-gray swiper-button-prev slider-navigation-style-04 border border-1 border-color-extra-medium-gray" tabindex="0" role="button" aria-label="Previous slide"><i class="fa-solid fa-arrow-left"></i></div>
@@ -284,7 +484,7 @@
                                     <div class="swiper-slide review-style-06"> 
                                         <div class="d-flex justify-content-center h-100 flex-column bg-white box-shadow-medium p-45px md-p-35px border-radius-6px last-paragraph-no-margin">
                                             <div class="mb-20px d-flex align-items-center">
-                                                <img class="rounded-circle w-90px h-90px me-20px" src="https://placehold.co/125x125" alt="">
+                                                <img class="rounded-circle w-90px h-90px me-20px" src="images/demo-hosting-home-icon-02.svg" alt="Client avatar">
                                                 <div class="d-inline-block align-middle last-paragraph-no-margin">
                                                     <div class="alt-font text-dark-gray fw-600 fs-18">Herman Miller</div>
                                                     <p class="lh-24 d-block">Digital marketer</p>
@@ -299,7 +499,7 @@
                                     <div class="swiper-slide review-style-06"> 
                                         <div class="d-flex justify-content-center h-100 flex-column bg-white box-shadow-medium p-45px md-p-35px border-radius-6px last-paragraph-no-margin">
                                             <div class="mb-20px d-flex align-items-center">
-                                                <img class="rounded-circle w-90px h-90px me-20px" src="https://placehold.co/125x125" alt="">
+                                                <img class="rounded-circle w-90px h-90px me-20px" src="images/demo-hosting-home-icon-03.svg" alt="Client avatar">
                                                 <div class="d-inline-block align-middle last-paragraph-no-margin">
                                                     <div class="alt-font text-dark-gray fw-600 fs-18">Alexander Harad</div>
                                                     <p class="lh-24 d-block">Digital marketer</p>
@@ -314,7 +514,7 @@
                                     <div class="swiper-slide review-style-06"> 
                                         <div class="d-flex justify-content-center h-100 flex-column bg-white box-shadow-medium p-45px md-p-35px border-radius-6px last-paragraph-no-margin">
                                             <div class="mb-20px d-flex align-items-center">
-                                                <img class="rounded-circle w-90px h-90px me-20px" src="https://placehold.co/125x125" alt="">
+                                                <img class="rounded-circle w-90px h-90px me-20px" src="images/demo-hosting-home-icon-04.svg" alt="Client avatar">
                                                 <div class="d-inline-block align-middle last-paragraph-no-margin">
                                                     <div class="alt-font text-dark-gray fw-600 fs-18">Shoko Mugikura</div>
                                                     <p class="lh-24 d-block">Digital marketer</p>
@@ -329,7 +529,7 @@
                                     <div class="swiper-slide review-style-06"> 
                                         <div class="d-flex justify-content-center h-100 flex-column bg-white box-shadow-medium p-45px md-p-35px border-radius-6px last-paragraph-no-margin">
                                             <div class="mb-20px d-flex align-items-center">
-                                                <img class="rounded-circle w-90px h-90px me-20px" src="https://placehold.co/125x125" alt="">
+                                                <img class="rounded-circle w-90px h-90px me-20px" src="images/demo-hosting-home-icon-05.svg" alt="Client avatar">
                                                 <div class="d-inline-block align-middle last-paragraph-no-margin">
                                                     <div class="alt-font text-dark-gray fw-600 fs-18">Jacob Kalling</div>
                                                     <p class="lh-24 d-block">Digital marketer</p>
@@ -406,8 +606,8 @@
                 <div class="row justify-content-center mb-5 md-mb-8 sm-mb-40px">
                     <!-- start footer column -->
                     <div class="col-6 col-lg-3 last-paragraph-no-margin order-sm-1 md-mb-40px xs-mb-30px">
-                        <a href="demo-hosting.html" class="footer-logo mb-15px d-inline-block"><img src="images/demo-hosting-logo-white.png" data-at2x="images/demo-hosting-logo-white@2x.png" alt=""></a>
-                        <p class="w-90 lg-w-100">Lorem ipsum amet adipiscing elit to eiusmod ad tempor incididunt enim.</p>
+                        <a href="demo-hosting.html" class="footer-logo mb-15px d-inline-block"><img src="images/new/logo.png" data-at2x="images/new/logo.png" alt="" style="width:160px;height:auto;max-height:none;"></a>
+                        <p class="w-90 lg-w-100">ATP Learning Hub delivers authorized SAP education with practical labs, certified instructors, and industry-aligned learning paths.</p>
                         <div class="elements-social social-icon-style-02 mt-20px xs-mt-15px">
                             <ul class="small-icon light">
                                 <li class="my-0"><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -424,7 +624,7 @@
                         <ul>
                             <li><a href="demo-hosting-about.html">About</a></li>
                             <li><a href="demo-hosting-hosting.html">Hosting</a></li>
-                            <li><a href="demo-hosting-domain.html">Domain</a></li>
+                            <li><a href="demo-hosting-domain.html">Testimonials</a></li>
                             <li><a href="demo-hosting-pricing.html">Pricing</a></li>
                         </ul>
                     </div>
@@ -444,13 +644,13 @@
                     <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
                         <span class="fs-17 fw-500 d-block text-white mb-5px">Say hello</span>
                         <span class="d-inline-flex w-100">Need support?</span>
-                        <a href="mailto:hi@domain.com" class="text-white lh-22 text-decoration-line-bottom d-inline-block mb-20px">hi@domain.com</a>
-                        <span class="d-inline-flex w-100">Customer care</span>
-                        <a href="tel:12345678910" class="text-white lh-22 d-inline-flex">+1 234 567 8910</a>
+                        <a href="mailto:atplearninghub@gmail.com" class="text-white lh-22 text-decoration-line-bottom d-inline-block mb-20px">atplearninghub@gmail.com</a>
+                        <span class="d-inline-flex w-100">Contact us</span>
+                        <a href="tel:9916223220" class="text-white lh-22 d-inline-flex">9916223220</a>
                     </div>
                     <!-- end footer column -->  
                     <!-- start footer column -->
-                    <div class="col-lg-3 col-sm-6 ps-30px sm-ps-15px md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
+                    <!-- <div class="col-lg-3 col-sm-6 ps-30px sm-ps-15px md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
                         <span class="fs-17 fw-500 d-block text-white mb-5px">Subscribe our newsletter</span>
                         <p class="mb-20px">Subscribe our newsletter to get the latest news and updates!</p>
                         <div class="d-inline-block w-100 newsletter-style-02 position-relative mb-15px"> 
@@ -462,17 +662,17 @@
                             </form>
                         </div>
                         <div class="footer-card">
-                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="https://placehold.co/55x20" alt=""></a>
-                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="https://placehold.co/55x20" alt=""></a>
-                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="https://placehold.co/55x20" alt=""></a>
-                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="https://placehold.co/55x20" alt=""></a>
+                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="images/visa.svg" alt="Visa"></a>
+                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="images/diners-club.svg" alt="Diners Club"></a>
+                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="images/discover.svg" alt="Discover"></a>
+                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="images/envato.svg" alt="Envato"></a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- end footer column -->                        
                 </div>
-                <div class="border-top border-color-transparent-white-light pt-35px pb-35px text-center">
+                <!-- <div class="border-top border-color-transparent-white-light pt-35px pb-35px text-center">
                     <span class="fs-13 w-60 lg-w-70 md-w-100 d-block mx-auto lh-22">This site is protected by reCAPTCHA and the Google <a href="#" class="text-white text-decoration-line-bottom">privacy policy</a> and <a href="#" class="text-white text-decoration-line-bottom">terms of service</a> apply. You must not use this website if you disagree with any of these website standard terms and conditions.</span>
-                </div>
+                </div> -->
             </div> 
         </footer>
         <!-- end footer -->
@@ -488,4 +688,15 @@
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var buttons = document.querySelectorAll('.course-tab-button');
+            buttons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    buttons.forEach(function(btn) { btn.classList.remove('active'); });
+                    button.classList.add('active');
+                });
+            });
+        });
+    </script>
 </html>
