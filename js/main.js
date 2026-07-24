@@ -518,22 +518,24 @@
         }
     }
     
-    // Without link
-    $('.nav-item  .nav-link').on('click',function(e) {
-    var submenuLenth = $(this).closest('.dropdown').find('.dropdown').length;
+    // Mobile dropdown toggle for nav links with submenu
+    $(document).on('click', '.nav-item .nav-link', function (e) {
+        var $link = $(this);
+        var $navItem = $link.closest('.nav-item');
+        var $menu = $navItem.children('.dropdown-menu');
 
-    if ( $( window ).width() < 992 && $(this).closest('.dropdown').length > 0 ) {
-        var HasClass = $(this).closest('.nav-item').find( '.dropdown-menu' ).hasClass ('show');
-        if ($(this).closest('.nav-item').find( '.dropdown-menu' ).hasClass ('show')) {
-            $(this).closest('.nav-item').find( '.dropdown-menu' ).removeClass('show')
-            $(this).closest('.nav-item').find( '.dropdown-toggle' ).removeClass('show')
-        }
-        else{
-            $( '.navbar-nav' ).find( '.dropdown-menu' ).removeClass('show');
-            $( '.navbar-nav' ).find( '.dropdown-toggle' ).removeClass('show');
-             $(this).closest('.nav-item').find( '.dropdown-menu' ).addClass('show')
-             $(this).closest('.nav-item').find( '.dropdown-toggle' ).addClass('show')
-        }
+        if ($(window).width() < 992 && $menu.length > 0) {
+            e.preventDefault();
+            e.stopPropagation();
+            var isOpen = $menu.hasClass('show');
+
+            $('.navbar-nav').find('.dropdown-menu').removeClass('show');
+            $('.navbar-nav').find('.dropdown-toggle').removeClass('show');
+
+            if (!isOpen) {
+                $menu.addClass('show');
+                $navItem.children('.dropdown-toggle').addClass('show');
+            }
         }
     });
 
@@ -542,6 +544,43 @@
             $( '.navbar-nav' ).find( '.dropdown-menu' ).removeClass('show');
             $( '.navbar-nav' ).find( '.dropdown-toggle' ).removeClass('show');
         }
+    });
+
+    // Courses mega menu - keep only one panel open per menu instance
+    $(document).on('click', '.course-tab-button', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        var $button = $(this);
+        var targetSelector = $button.attr('data-bs-target') || '';
+        if (!targetSelector && $button.attr('aria-controls')) {
+            targetSelector = '#' + $button.attr('aria-controls');
+        }
+        if (!targetSelector || targetSelector.charAt(0) !== '#') {
+            return;
+        }
+
+        var targetId = targetSelector.slice(1);
+        var $menuRoot = $button.closest('.course-dropdown');
+        if (!$menuRoot.length) {
+            return;
+        }
+
+        var $sections = $menuRoot.find('[id="coursesTabSections"]').first();
+        if (!$sections.length) {
+            return;
+        }
+
+        var $panels = $sections.children('.collapse');
+        var $targetPanel = $sections.children('#' + targetId);
+
+        $panels.removeClass('show');
+        if ($targetPanel.length) {
+            $targetPanel.addClass('show');
+        }
+
+        $menuRoot.find('.course-tab-button').removeClass('active').attr('aria-expanded', 'false');
+        $button.addClass('active').attr('aria-expanded', 'true');
     });
 
     /* ===================================

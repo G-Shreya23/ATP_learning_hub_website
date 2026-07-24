@@ -1084,11 +1084,17 @@
     </body>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                var buttons = document.querySelectorAll('.course-tab-button');
-                buttons.forEach(function(button) {
-                    button.addEventListener('click', function() {
-                        buttons.forEach(function(btn) { btn.classList.remove('active'); });
-                        button.classList.add('active');
+                document.querySelectorAll('.course-dropdown').forEach(function(menu) {
+                    var buttons = menu.querySelectorAll('.course-tab-button');
+                    buttons.forEach(function(button) {
+                        button.addEventListener('click', function() {
+                            buttons.forEach(function(btn) {
+                                btn.classList.remove('active');
+                                btn.setAttribute('aria-expanded', 'false');
+                            });
+                            button.classList.add('active');
+                            button.setAttribute('aria-expanded', 'true');
+                        });
                     });
                 });
             });
