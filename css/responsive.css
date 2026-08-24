@@ -19742,7 +19742,8 @@ header .navbar-brand .default-logo {
   width: auto !important;
 }
 header .navbar-brand .mobile-logo {
-  max-height: 72px !important;
+  max-height: 48px !important;
+  width: 94px !important;
   height: auto !important;
 }
 footer .footer-logo img {
@@ -19759,8 +19760,9 @@ footer .footer-logo img {
   header .navbar-brand .mobile-logo {
     visibility: visible !important;
     opacity: 1 !important;
-    max-height: 56px !important;
-    width: auto !important;
+    max-height: 44px !important;
+    width: 94px !important;
+    height: auto !important;
   }
 }
   header .header-top-bar .row {

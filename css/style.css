@@ -65,6 +65,7 @@ Table of contents
   --aluminium-grey:#80858F;
   --solitude-blue:#f0f4fd;
   --golden-yellow:#fd961e;
+  --dark-blue: #0D4F8B;
   --selago:#eaedff;
   --white-ice:#d8f5ef;
   --cornflower-blue:#445fed;
@@ -95,10 +96,24 @@ body {
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
-  color: var(--medium-gray);
+  color: var(--dark-blue);
   -moz-osx-font-smoothing: grayscale;
   word-break: break-word;
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.navbar-nav .nav-link,
+.nav-link,
+p, li, span, a, label, input, textarea, select, button,
+.text-dark-gray, .text-medium-gray, .text-base-color,
+.text-black {
+  color: var(--dark-blue);
+}
+
+mark, .highlight-text, .highlight-blue {
+  color: var(--dark-blue) !important;
 }
 section {
   padding-top: 110px;
@@ -228,6 +243,12 @@ h5 {
 h6 {
   font-size: 1.75rem;
   line-height: 1.95rem;
+}
+.navbar-brand .mobile-logo,
+img.mobile-logo {
+  width: 120px !important;
+  max-width: 100% !important;
+  height: auto !important;
 }
 /* Font custom */
 .font-style-italic {
@@ -582,8 +603,15 @@ b, strong {
 .text-black, .btn-link.text-black, a.text-black-hover:hover {
   color: var(--black);
 }
-.text-dark-gray, .btn-link.text-dark-gray, a.text-dark-gray-hover:hover {
-  color: var(--dark-gray);
+.text-dark-gray, .btn-link.text-dark-gray, a.text-dark-gray-hover:hover,
+.text-dark-gray a,
+h1.text-dark-gray, h2.text-dark-gray, h3.text-dark-gray, h4.text-dark-gray, h5.text-dark-gray, h6.text-dark-gray,
+.h1.text-dark-gray, .h2.text-dark-gray, .h3.text-dark-gray, .h4.text-dark-gray, .h5.text-dark-gray, .h6.text-dark-gray,
+.feature-box-content .text-dark-gray,
+.feature-box-content span.text-dark-gray,
+.feature-box-content > span,
+.feature-box-content .d-inline-block {
+  color: var(--dark-blue) !important;
 }
 .text-medium-gray, .btn-link.text-medium-gray, a.text-medium-gray-hover:hover {
   color: var(--medium-gray);
@@ -7060,20 +7088,32 @@ header .header-top-bar .widget i {
   padding-right: 5px;
 }
 
-/* Custom overrides: increase logo sizes for ATP Learning Hub */
+/* Custom overrides: ensure the mobile logo is smaller and the desktop logo stays hidden on small screens */
 header .navbar-brand img {
   max-height: 100px !important;
   height: auto !important;
 }
 header .navbar-brand .mobile-logo {
-  max-height: 72px !important;
+  max-height: 48px !important;
+  width: 94px !important;
+  height: auto !important;
 }
 @media (max-width: 991px) {
+  header .navbar-brand .default-logo,
+  header .navbar-brand .alt-logo {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+  }
   header .navbar-brand img {
-    max-height: 72px !important;
+    max-height: 44px !important;
   }
   header .navbar-brand .mobile-logo {
-    max-height: 56px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 94px !important;
+    max-height: 44px !important;
+    height: auto !important;
   }
 }
 
@@ -9222,6 +9262,15 @@ button:focus {
 .page-title-extra-small h2 {
   font-size: 3.8rem;
   line-height: 3.8rem;
+}
+.page-title-big-typography h1,
+.page-title-big-typography h2,
+.page-title-big-typography h1 span,
+.page-title-big-typography h2 span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: none !important;
 }
 .page-title-button-style.page-title-button-style {
   -webkit-transition: all 0.3s;
@@ -12826,6 +12875,7 @@ blockquote footer {
 }
 .list-style-01 li {
   border-bottom: 1px solid;
+  color: var(--dark-blue) !important;
 }
 .list-style-01 li:last-child {
   border-bottom: 0px;

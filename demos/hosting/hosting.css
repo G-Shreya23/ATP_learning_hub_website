@@ -2,10 +2,11 @@
     Crafto - Hosting
 ====================================== */
 /* font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 /* variable */
 :root {      
-    --alt-font: 'Inter', sans-serif;
+    --alt-font: 'Plus Jakarta Sans', sans-serif;
     --primary-font: 'Inter', sans-serif;
     --base-color: #152bca;
     --dark-gray: #181b31;
@@ -27,8 +28,16 @@
     text-overflow: ellipsis;
     opacity: 1; 
 }
-body{
+body {
     line-height: 30px;
+    font-family: var(--primary-font);
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--alt-font);
+}
+p, a, li, span, label, input, textarea, select, button {
+    font-family: var(--primary-font);
 }
 /* header */
 .header-icon .icon > a {
@@ -181,5 +190,370 @@ footer ul li {
     }
     .newsletter-style-02 .btn i {
         top: 0;
+    }
+}
+
+/* ===================================
+   ATP Learning Hub Brand System
+====================================== */
+:root {
+    --brand-primary: #0D4F8B;
+    --brand-secondary: #1E6FB6;
+    --brand-accent: #3BC0BE;
+    --brand-bg: #FFFFFF;
+    --brand-text: #222222;
+    --header-offset-desktop: 172px;
+    --header-offset-mobile: 124px;
+    --hero-inner-space-desktop: 56px;
+
+    /* Keep existing theme tokens aligned to official palette. */
+    --base-color: var(--brand-primary);
+    --dark-gray: var(--brand-text);
+    --green: var(--brand-accent);
+    --medium-gray: var(--brand-secondary);
+    --yellow: var(--brand-accent);
+    --golden-yellow: var(--brand-secondary);
+    --tussock-yellow: var(--brand-primary);
+}
+
+html,
+body {
+    background-color: var(--brand-bg);
+    color: var(--brand-text);
+}
+
+a {
+    color: var(--brand-secondary);
+}
+
+a:hover,
+a:focus {
+    color: var(--brand-primary);
+}
+
+/* Core brand surfaces */
+.bg-midnight-dark-blue {
+    background-color: var(--brand-primary);
+}
+
+.bg-dark-blue {
+    background-color: var(--brand-secondary);
+}
+
+.bg-arsenic-grey {
+    background-color: var(--brand-text) !important;
+}
+
+.text-dark-gray,
+.text-dark-gray-hover:hover {
+    color: var(--brand-text) !important;
+}
+
+/* Brand-first navigation and CTA styling */
+.navbar .navbar-nav .nav-link {
+    color: var(--brand-bg);
+    font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand-accent);
+}
+
+.navbar .navbar-toggler-line {
+    background-color: var(--brand-primary) !important;
+}
+
+.btn,
+.btn.btn-link,
+.btn.btn-switch-text {
+    border-radius: 999px;
+}
+
+.btn.btn-base-color,
+.btn.btn-blue,
+.btn-green {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: var(--brand-bg);
+}
+
+.btn.btn-base-color:hover,
+.btn.btn-blue:hover,
+.btn-green:hover {
+    background-color: var(--brand-secondary);
+    border-color: var(--brand-secondary);
+    color: var(--brand-bg);
+}
+
+.btn.btn-outline,
+.btn.btn-white.btn-transparent-light-gray {
+    border-color: var(--brand-accent);
+}
+
+/* De-yellow utility mappings: keep existing class names but render brand colors. */
+.text-yellow,
+.btn-link.text-yellow,
+a.text-yellow-hover:hover,
+.text-golden-yellow,
+.btn-link.text-golden-yellow,
+a.text-golden-yellow-hover:hover,
+.text-tussock-yellow,
+.btn-link.text-tussock-yellow,
+a.text-tussock-yellow-hover:hover {
+    color: var(--brand-secondary) !important;
+}
+
+.bg-yellow,
+.bg-golden-yellow,
+.bg-tussock-yellow,
+.bg-gradient-fast-pink-light-yellow,
+.bg-gradient-fast-pink-light-yellow-transparent {
+    background: linear-gradient(120deg, var(--brand-accent) 0%, var(--brand-secondary) 100%) !important;
+    color: var(--brand-bg) !important;
+}
+
+.border-color-yellow,
+.border-gradient-fast-pink-light-yellow {
+    border-color: var(--brand-accent) !important;
+}
+
+.btn-yellow,
+.btn.btn-box-shadow.btn-yellow,
+.btn.btn-extra-large.btn-yellow,
+.btn.btn-medium.btn-yellow,
+.btn.btn-large.btn-yellow {
+    background-color: var(--brand-secondary) !important;
+    border-color: var(--brand-secondary) !important;
+    color: var(--brand-bg) !important;
+}
+
+.btn-yellow:hover,
+.btn.btn-box-shadow.btn-yellow:hover,
+.btn.btn-extra-large.btn-yellow:hover,
+.btn.btn-medium.btn-yellow:hover,
+.btn.btn-large.btn-yellow:hover {
+    background-color: var(--brand-primary) !important;
+    border-color: var(--brand-primary) !important;
+    color: var(--brand-bg) !important;
+}
+
+/* Logo sizing consistency */
+header .navbar-brand .default-logo,
+header .navbar-brand .alt-logo {
+    width: 198px !important;
+    max-height: none !important;
+    height: auto !important;
+}
+
+footer .footer-logo img {
+    width: 200px;
+    max-height: none;
+    height: auto;
+}
+
+/* Hero offset to avoid overlap with transparent header */
+header.header-with-topbar + section.full-screen.ipad-top-space-margin {
+    margin-top: var(--header-offset-desktop) !important;
+    height: auto !important;
+    min-height: calc(100vh - var(--header-offset-desktop));
+}
+
+header.header-with-topbar + section.full-screen {
+    padding-top: 0 !important;
+}
+
+header.header-with-topbar + section .container,
+header.header-with-topbar + section .container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+header.header-with-topbar + section.full-screen > .container {
+    height: auto !important;
+    min-height: calc(100vh - 40px);
+    padding-top: var(--hero-inner-space-desktop);
+    padding-bottom: var(--hero-inner-space-desktop);
+}
+
+header.header-with-topbar + section.full-screen > .container > .row.h-100 {
+    height: auto !important;
+    min-height: calc(100vh - var(--header-offset-desktop) - 40px);
+    align-items: flex-start !important;
+    padding-top: 0;
+}
+
+/* Brand design language: gradient wave + technology rings + angular/grid accents */
+header.header-with-topbar + section.cover-background.position-relative {
+    overflow: hidden;
+}
+
+header.header-with-topbar + section.cover-background.position-relative::before {
+    content: "";
+    position: absolute;
+    inset: auto -8% -18% -8%;
+    height: 44%;
+    background: linear-gradient(100deg, rgba(13, 79, 139, 0.24) 0%, rgba(30, 111, 182, 0.18) 55%, rgba(59, 192, 190, 0.24) 100%);
+    border-radius: 56% 44% 0 0 / 100% 100% 0 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+header.header-with-topbar + section.cover-background.position-relative::after {
+    content: "";
+    position: absolute;
+    top: 8%;
+    right: -120px;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at center, rgba(59, 192, 190, 0.30) 0 20%, transparent 22%),
+        radial-gradient(circle at center, transparent 35%, rgba(30, 111, 182, 0.32) 36% 41%, transparent 42%),
+        radial-gradient(circle at center, transparent 53%, rgba(13, 79, 139, 0.28) 54% 59%, transparent 60%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+header.header-with-topbar + section.full-screen .container::before {
+    content: "";
+    position: absolute;
+    top: 18%;
+    left: -32px;
+    width: 110px;
+    height: 110px;
+    opacity: 0.35;
+    background-image:
+        linear-gradient(135deg, rgba(30, 111, 182, 0.35) 0 2px, transparent 2px 100%),
+        linear-gradient(45deg, rgba(59, 192, 190, 0.35) 0 2px, transparent 2px 100%);
+    background-size: 18px 18px, 18px 18px;
+    transform: rotate(8deg);
+    z-index: 0;
+    pointer-events: none;
+}
+
+header.header-with-topbar + section.full-screen .container::after {
+    content: "";
+    position: absolute;
+    right: 10%;
+    bottom: 14%;
+    width: 128px;
+    height: 42px;
+    border-top: 4px solid rgba(59, 192, 190, 0.85);
+    border-right: 4px solid rgba(59, 192, 190, 0.85);
+    transform: skewX(-20deg) rotate(-10deg);
+    opacity: 0.8;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Subtle premium movement */
+@keyframes brandFloatRing {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+header.header-with-topbar + section.cover-background.position-relative::after {
+    animation: brandFloatRing 9s ease-in-out infinite;
+}
+
+/* Mobile navbar alignment: logo left, toggle right */
+@media (max-width: 991px) {
+    header.header-with-topbar nav.navbar .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: var(--brand-bg);
+        padding: 10px 14px;
+    }
+
+    header.header-with-topbar nav.navbar .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+    header.header-with-topbar nav.navbar .default-logo,
+    header.header-with-topbar nav.navbar .alt-logo {
+        display: none !important;
+    }
+
+    header.header-with-topbar nav.navbar .mobile-logo {
+        display: block !important;
+        width: 132px !important;
+        max-width: none !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+    header.header-with-topbar nav.navbar .menu-order {
+        margin-left: auto !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 0 0 auto;
+    }
+
+    header.header-with-topbar nav.navbar .navbar-toggler {
+        margin: 0 !important;
+        padding: 8px 0 8px 10px;
+        border: 0;
+        box-shadow: none;
+    }
+
+    header.header-with-topbar nav.navbar .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background: var(--brand-bg);
+        border-top: 1px solid rgba(13, 79, 139, 0.12);
+        box-shadow: 0 16px 34px rgba(13, 79, 139, 0.12);
+    }
+
+    header.header-with-topbar nav.navbar .navbar-collapse .nav-link,
+    header.header-with-topbar nav.navbar .navbar-collapse .dropdown-toggle {
+        color: var(--brand-primary) !important;
+    }
+
+    header.header-with-topbar nav.navbar .navbar-collapse .nav-link:hover,
+    header.header-with-topbar nav.navbar .navbar-collapse .nav-link:focus,
+    header.header-with-topbar nav.navbar .navbar-collapse .nav-link.active {
+        color: var(--brand-secondary) !important;
+    }
+
+    header.header-with-topbar + section.full-screen {
+        padding-top: 0 !important;
+    }
+
+    header.header-with-topbar + section.full-screen.ipad-top-space-margin {
+        margin-top: var(--header-offset-mobile) !important;
+        min-height: calc(100vh - var(--header-offset-mobile));
+    }
+
+    header.header-with-topbar + section.full-screen > .container {
+        min-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    header.header-with-topbar + section.full-screen > .container > .row.h-100 {
+        min-height: 0;
+        padding-top: 0;
+    }
+
+    header.header-with-topbar + section.full-screen .container::before,
+    header.header-with-topbar + section.full-screen .container::after {
+        display: none;
     }
 }
