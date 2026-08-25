@@ -19742,9 +19742,11 @@ header .navbar-brand .default-logo {
   width: auto !important;
 }
 header .navbar-brand .mobile-logo {
-  max-height: 48px !important;
-  width: 94px !important;
+  max-height: 42px !important;
+  max-width: 96px !important;
+  width: auto !important;
   height: auto !important;
+  object-fit: contain;
 }
 footer .footer-logo img {
   width: 200px !important;
@@ -19760,9 +19762,11 @@ footer .footer-logo img {
   header .navbar-brand .mobile-logo {
     visibility: visible !important;
     opacity: 1 !important;
-    max-height: 44px !important;
-    width: 94px !important;
+    max-height: 40px !important;
+    max-width: 96px !important;
+    width: auto !important;
     height: auto !important;
+    object-fit: contain;
   }
 }
   header .header-top-bar .row {
@@ -20313,10 +20317,12 @@ footer .footer-logo img {
     margin-top: 76px;
   }
   .full-screen.top-space-margin {
-    height: calc(100vh - 76px);
+    min-height: calc(100vh - 76px);
+    height: auto;
   }
   .full-screen.ipad-top-space-margin {
-    height: calc(100vh - 76px);
+    min-height: calc(100vh - 76px);
+    height: auto;
   }
   .navbar .navbar-nav .nav-link[href="javascript:void(0);"] {
     z-index: 1 !important;
@@ -20355,6 +20361,10 @@ footer .footer-logo img {
   }
   [data-mobile-nav-style=modern] .navbar-modern-inner .navbar-collapse {
     padding: 70px 0;
+  }
+  .full-screen {
+    min-height: auto;
+    height: auto;
   }
   .navbar-collapse-show[data-mobile-nav-style=modern] .navbar-modern-inner {
     width: 85vw;

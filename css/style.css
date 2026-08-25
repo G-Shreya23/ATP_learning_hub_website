@@ -2163,10 +2163,12 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 }
 /* Full screen */
 .full-screen {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 .full-screen.top-space-margin {
-  height: calc(100vh - 96px);
+  min-height: calc(100vh - 96px);
+  height: auto;
 }
 /* Video icons */
 @-webkit-keyframes video-icon-sonar {
@@ -7094,9 +7096,11 @@ header .navbar-brand img {
   height: auto !important;
 }
 header .navbar-brand .mobile-logo {
-  max-height: 48px !important;
-  width: 94px !important;
+  max-height: 42px !important;
+  max-width: 96px !important;
+  width: auto !important;
   height: auto !important;
+  object-fit: contain;
 }
 @media (max-width: 991px) {
   header .navbar-brand .default-logo,
@@ -7111,9 +7115,11 @@ header .navbar-brand .mobile-logo {
   header .navbar-brand .mobile-logo {
     visibility: visible !important;
     opacity: 1 !important;
-    width: 94px !important;
-    max-height: 44px !important;
+    max-width: 96px !important;
+    width: auto !important;
+    max-height: 40px !important;
     height: auto !important;
+    object-fit: contain;
   }
 }
 

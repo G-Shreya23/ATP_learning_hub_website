@@ -2,11 +2,10 @@
     Crafto - Hosting
 ====================================== */
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 /* variable */
 :root {      
-    --alt-font: 'Plus Jakarta Sans', sans-serif;
+    --alt-font: 'Inter', sans-serif;
     --primary-font: 'Inter', sans-serif;
     --base-color: #152bca;
     --dark-gray: #181b31;
@@ -28,16 +27,8 @@
     text-overflow: ellipsis;
     opacity: 1; 
 }
-body {
+body{
     line-height: 30px;
-    font-family: var(--primary-font);
-}
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: var(--alt-font);
-}
-p, a, li, span, label, input, textarea, select, button {
-    font-family: var(--primary-font);
 }
 /* header */
 .header-icon .icon > a {
