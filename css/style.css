@@ -6908,6 +6908,13 @@ header.sticky.sticky-active .header-reverse.glass-effect {
 header.sticky.sticky-active .header-reverse.header-dark.glass-effect {
   background-color: rgba(35, 35, 35, 0.7) !important;
 }
+header.sticky.sticky-active .navbar-brand {
+  display: none !important;
+}
+header.sticky.sticky-active .navbar-nav .nav-link {
+  padding-top: 38px !important;
+  padding-bottom: 38px !important;
+}
 header.sticky.sticky-active .navbar-brand .alt-logo {
   visibility: visible;
   opacity: 1;
@@ -7046,7 +7053,7 @@ header .navbar.mini-header .navbar-brand img {
   max-height: 22px;
 }
 header .navbar-brand {
-  margin-right: 0;
+  margin-right: 30px;
   vertical-align: middle;
   padding: 30px 0;
   display: inline-block;
@@ -7055,7 +7062,9 @@ header .navbar-brand {
 header .navbar-brand .default-logo {
   visibility: visible;
   opacity: 1;
-  width: auto;
+  width: 340px !important;
+  height: auto !important;
+  max-height: 180px !important;
 }
 header .navbar-brand .alt-logo, header .navbar-brand .mobile-logo {
   visibility: hidden;
@@ -7063,7 +7072,8 @@ header .navbar-brand .alt-logo, header .navbar-brand .mobile-logo {
   width: 0;
 }
 header .navbar-brand img {
-  max-height: 46px;
+  max-height: 140px !important;
+  height: auto !important;
 }
 header .header-top-bar {
   position: fixed;
@@ -7092,7 +7102,7 @@ header .header-top-bar .widget i {
 
 /* Custom overrides: ensure the mobile logo is smaller and the desktop logo stays hidden on small screens */
 header .navbar-brand img {
-  max-height: 100px !important;
+  max-height: 180px !important;
   height: auto !important;
 }
 header .navbar-brand .mobile-logo {

@@ -19682,7 +19682,9 @@
     padding-bottom: 0;
   }
   header .navbar-brand {
-    padding: 22px 0;
+    padding: 26px 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   header .navbar-brand .default-logo, header .navbar-brand .alt-logo {
     visibility: hidden !important;
@@ -19693,6 +19695,10 @@
     visibility: visible !important;
     opacity: 1 !important;
     width: auto !important;
+    max-width: 180px !important;
+    max-height: 70px !important;
+    height: auto !important;
+    display: block !important;
   }
   header .navbar-brand .mobile-logo:focus {
     outline: none;
@@ -19729,25 +19735,6 @@
     margin: 20px 0;
   }
 
-/* ATP logo final overrides: ensure logo is visible and sized across breakpoints */
-header .navbar-brand .default-logo,
-header .navbar-brand .alt-logo {
-  visibility: visible !important;
-  opacity: 1 !important;
-  width: auto !important;
-}
-header .navbar-brand .default-logo {
-  max-height: 100px !important;
-  height: auto !important;
-  width: auto !important;
-}
-header .navbar-brand .mobile-logo {
-  max-height: 42px !important;
-  max-width: 96px !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain;
-}
 footer .footer-logo img {
   width: 200px !important;
   height: auto !important;
@@ -19762,11 +19749,25 @@ footer .footer-logo img {
   header .navbar-brand .mobile-logo {
     visibility: visible !important;
     opacity: 1 !important;
-    max-height: 40px !important;
-    max-width: 96px !important;
+    max-height: 70px !important;
+    max-width: 180px !important;
     width: auto !important;
     height: auto !important;
     object-fit: contain;
+    display: block !important;
+  }
+  header.sticky.sticky-active .navbar-brand {
+    display: inline-block !important;
+  }
+  header.sticky .responsive-sticky .navbar-brand {
+    padding: 18px 0;
+  }
+  header.sticky .responsive-sticky .navbar-nav .nav-link {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  header.sticky .responsive-sticky .navbar-toggler {
+    margin: 24px 0;
   }
 }
   header .header-top-bar .row {
