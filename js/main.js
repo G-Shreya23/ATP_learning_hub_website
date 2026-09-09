@@ -2647,31 +2647,34 @@
                     init: function () {
                         let slides = this.slides;
                         let activeIndex = this.activeIndex,
-                                current_slide = this.slides[activeIndex],
-                                anime_el = current_slide.querySelectorAll('[data-anime]'),
-                                fancy_el = current_slide.querySelectorAll('[data-fancy-text]');
+                                current_slide = this.slides[activeIndex];
 
-                        if (getWindowWidth() > animeBreakPoint) {
-                            if (anime_el) {
-                                anime_el.forEach(element => {
-                                    let options = element.getAttribute('data-anime');
+                        if (current_slide) {
+                            let anime_el = current_slide.querySelectorAll('[data-anime]'),
+                                    fancy_el = current_slide.querySelectorAll('[data-fancy-text]');
 
-                                    if (typeof (options) !== 'undefined' && options !== null) {
-                                        options = $.parseJSON(options);
+                            if (getWindowWidth() > animeBreakPoint) {
+                                if (anime_el) {
+                                    anime_el.forEach(element => {
+                                        let options = element.getAttribute('data-anime');
 
-                                        element.classList.add('appear');
-                                        element.style.transition = "none";
+                                        if (typeof (options) !== 'undefined' && options !== null) {
+                                            options = $.parseJSON(options);
 
-                                        if (options.el) {
-                                            for (let i = 0; i < element.children.length; i++) {
-                                                element.children[i].style.transition = "none";
-                                                element.children[i].classList.add('appear');
+                                            element.classList.add('appear');
+                                            element.style.transition = "none";
+
+                                            if (options.el) {
+                                                for (let i = 0; i < element.children.length; i++) {
+                                                    element.children[i].style.transition = "none";
+                                                    element.children[i].classList.add('appear');
+                                                }
                                             }
+                                            animeAnimation(element, options);
+                                            element.classList.remove('appear');
                                         }
-                                        animeAnimation(element, options);
-                                        element.classList.remove('appear');
-                                    }
-                                });
+                                    });
+                                }
                             }
                         }
                     },
@@ -2679,45 +2682,48 @@
                         // Get active slide
                         let slides = this.slides;
                         let activeIndex = this.activeIndex,
-                                current_slide = this.slides[activeIndex],
-                                anime_el = current_slide.querySelectorAll('[data-anime]'),
-                                fancy_el = current_slide.querySelectorAll('[data-fancy-text]');
+                                current_slide = this.slides[activeIndex];
 
-                        if (getWindowWidth() > animeBreakPoint) {
-                            if (fancy_el) {
-                                fancy_el.forEach(element => {
-                                    element.classList.add('appear');
-                                    let fancy_options = element.getAttribute('data-fancy-text');
-                                    if (typeof (fancy_options) !== 'undefined' && fancy_options !== null) {
-                                        fancy_options = $.parseJSON(fancy_options);
-                                        let child = element;
+                        if (current_slide) {
+                            let anime_el = current_slide.querySelectorAll('[data-anime]'),
+                                    fancy_el = current_slide.querySelectorAll('[data-fancy-text]');
 
-                                        FancyTextDefault(child, fancy_options);
-                                        element.classList.remove('appear');
-                                    }
-                                });
-                            }
-
-                            if (anime_el) {
-                                anime_el.forEach(element => {
-                                    let options = element.getAttribute('data-anime');
-
-                                    if (typeof (options) !== 'undefined' && options !== null) {
-                                        options = $.parseJSON(options);
-
+                            if (getWindowWidth() > animeBreakPoint) {
+                                if (fancy_el) {
+                                    fancy_el.forEach(element => {
                                         element.classList.add('appear');
-                                        element.style.transition = "none";
+                                        let fancy_options = element.getAttribute('data-fancy-text');
+                                        if (typeof (fancy_options) !== 'undefined' && fancy_options !== null) {
+                                            fancy_options = $.parseJSON(fancy_options);
+                                            let child = element;
 
-                                        if (options.el) {
-                                            for (let i = 0; i < element.children.length; i++) {
-                                                element.children[i].style.transition = "none";
-                                                element.children[i].classList.add('appear');
-                                            }
+                                            FancyTextDefault(child, fancy_options);
+                                            element.classList.remove('appear');
                                         }
-                                        animeAnimation(element, options);
-                                        element.classList.remove('appear');
-                                    }
-                                });
+                                    });
+                                }
+
+                                if (anime_el) {
+                                    anime_el.forEach(element => {
+                                        let options = element.getAttribute('data-anime');
+
+                                        if (typeof (options) !== 'undefined' && options !== null) {
+                                            options = $.parseJSON(options);
+
+                                            element.classList.add('appear');
+                                            element.style.transition = "none";
+
+                                            if (options.el) {
+                                                for (let i = 0; i < element.children.length; i++) {
+                                                    element.children[i].style.transition = "none";
+                                                    element.children[i].classList.add('appear');
+                                                }
+                                            }
+                                            animeAnimation(element, options);
+                                            element.classList.remove('appear');
+                                        }
+                                    });
+                                }
                             }
                         }
                     }
