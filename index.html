@@ -104,6 +104,234 @@
             h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                 font-family: var(--alt-font) !important;
             }
+            .home-hero {
+                position: relative;
+                min-height: 760px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                background: #b96d47;
+            }
+            .home-hero .hero-slide {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transform: translateX(100%);
+                transition: transform 0.8s ease, opacity 0.8s ease, visibility 0.8s ease;
+            }
+            .home-hero .hero-slide.is-active {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                transform: translateX(0);
+                z-index: 1;
+            }
+            .home-hero .hero-slide.is-leaving {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateX(-18%);
+            }
+            .home-hero .hero-slide.is-entering {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0);
+            }
+            .home-hero .hero-slide .hero-media {
+                position: absolute;
+                inset: 0;
+                background-size: cover;
+                background-position: center center;
+                transform: scale(1.06);
+            }
+            .home-hero .hero-slide .hero-overlay {
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.58) 38%, rgba(0, 0, 0, 0.45) 100%);
+            }
+            .home-hero .hero-content {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                min-height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 54px;
+                padding-bottom: 60px;
+            }
+            .home-hero .hero-eyebrow {
+                display: inline-block;
+                padding: 8px 18px;
+                border: 1px solid rgba(255, 255, 255, 0.6);
+                border-radius: 999px;
+                background: rgba(255, 255, 255, 0.08);
+                backdrop-filter: blur(2px);
+                color: #ffffff;
+                font-size: 0.88rem;
+                font-weight: 700 !important;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                margin-bottom: 32px;
+            }
+            .home-hero h1 {
+                margin-bottom: 18px;
+                color: #ffffff;
+                font-size: clamp(1.9rem, 2.7vw, 4.1rem);
+                line-height: 1;
+                letter-spacing: -0.06em;
+                font-weight: 700 !important;
+                text-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+            }
+            .home-hero .hero-subtitle {
+                max-width: 900px;
+                margin: 0 auto;
+                color: rgba(255, 255, 255, 0.96);
+                font-size: clamp(0.96rem, 1.1vw, 1.5rem);
+                line-height: 1.28;
+                font-weight: 400 !important;
+                text-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+            }
+            .home-hero .hero-actions {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 18px;
+                flex-wrap: wrap;
+                margin-top: 36px;
+            }
+            .home-hero .hero-btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 58px;
+                padding: 0 28px;
+                border-radius: 999px;
+                font-size: 1rem;
+                font-weight: 700 !important;
+                transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+            }
+            .home-hero .hero-btn:hover {
+                transform: translateY(-2px);
+            }
+            .home-hero .hero-btn-primary {
+                background: #ffffff;
+                color: #1d2b3e;
+                box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+            }
+            .home-hero .hero-btn-secondary {
+                background: rgba(255, 255, 255, 0.08);
+                color: #ffffff;
+                border: 1px solid rgba(255, 255, 255, 0.55);
+                backdrop-filter: blur(2px);
+            }
+            .home-hero .hero-arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 3;
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.8);
+                background: rgba(255, 255, 255, 0.08);
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4rem;
+                cursor: pointer;
+                backdrop-filter: blur(2px);
+                transition: background 0.2s ease, transform 0.2s ease;
+            }
+            .home-hero .hero-arrow:hover {
+                background: rgba(255, 255, 255, 0.16);
+            }
+            .home-hero .hero-arrow:active {
+                transform: translateY(-50%) scale(0.97);
+            }
+            .home-hero .hero-arrow-prev {
+                left: 28px;
+            }
+            .home-hero .hero-arrow-next {
+                right: 28px;
+            }
+            @media (max-width: 991px) {
+                .home-hero {
+                    min-height: 620px;
+                }
+            }
+            @media (max-width: 767px) {
+                .home-hero {
+                    min-height: 560px;
+                }
+                .home-hero .hero-content {
+                    padding-top: 82px;
+                    padding-bottom: 30px;
+                    padding-left: 14px;
+                    padding-right: 14px;
+                }
+                .home-hero .hero-content .row {
+                    width: 100%;
+                    max-width: 520px;
+                    margin: 0 auto;
+                }
+                .home-hero .hero-content .col-xl-10,
+                .home-hero .hero-content .col-lg-11 {
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                }
+                .home-hero .hero-eyebrow {
+                    display: block;
+                    letter-spacing: 0.05em;
+                    font-size: 0.66rem;
+                    line-height: 1.4;
+                    margin-bottom: 22px;
+                }
+                .home-hero h1 {
+                    font-size: clamp(2rem, 7vw, 3rem);
+                    line-height: 1.02;
+                    max-width: 700px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .home-hero .hero-subtitle {
+                    max-width: 480px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 0.92rem;
+                    line-height: 1.35;
+                }
+                .home-hero .hero-actions {
+                    width: 100%;
+                    max-width: 520px;
+                    margin: 24px auto 0;
+                    gap: 14px;
+                    align-items: stretch;
+                }
+                .home-hero .hero-btn {
+                    width: 100%;
+                    max-width: 100%;
+                    min-height: 52px;
+                    font-size: 0.96rem;
+                }
+                .home-hero .hero-arrow {
+                    width: 42px;
+                    height: 42px;
+                    font-size: 1.05rem;
+                }
+                .home-hero .hero-arrow-prev {
+                    left: 14px;
+                }
+                .home-hero .hero-arrow-next {
+                    right: 14px;
+                }
+            }
         </style>
     </head>
     <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="">
@@ -382,22 +610,50 @@
             <!-- end navigation -->
         </header>
         <!-- end header --> 
-        <!-- start page title -->
-        <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin cover-background md-py-0" style="background-image: url('images/demo-hosting-home-bg.jpg')"> 
-            <div class="container">
-                <div class="row align-items-center small-screen">
-                    <div class="col-lg-5 col-sm-7 position-relative page-title-extra-small">
-                        <h1 class="mb-15px fw-300 overflow-hidden" style="color: #ffffff !important; opacity: 1 !important;">
-                            <span class="d-inline-block" data-anime='{ "translateY": [30, 0], "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "staggervalue": 300 }'>Authorized SAP training for real career growth</span>
-                        </h1>
-                        <h2 class="m-auto pb-5px pt-5px fw-600 ls-minus-1px overflow-hidden" style="color: #ffffff !important;">
-                            <span class="d-inline-block" data-anime='{ "translateY": [30, 0], "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "staggervalue": 300, "delay": 200 }'>Authorized SAP training for real carrer growth.</span>
-                        </h2>
-                    </div> 
+        <!-- start home hero -->
+        <section class="home-hero">
+            <button type="button" class="hero-arrow hero-arrow-prev" aria-label="Previous slide"><i class="fa-solid fa-arrow-left"></i></button>
+            <button type="button" class="hero-arrow hero-arrow-next" aria-label="Next slide"><i class="fa-solid fa-arrow-right"></i></button>
+
+            <div class="hero-slide is-active">
+                <div class="hero-media" aria-hidden="true" style="background-image: url('images/new/meeting-hall.jpeg');"></div>
+                <div class="hero-overlay" aria-hidden="true"></div>
+
+                <div class="container hero-content">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-xl-10 col-lg-11">
+                            <span class="hero-eyebrow">ATP Learning Hub | Authorized SAP Training & Adoption</span>
+                            <h1>ATP Learning Hub</h1>
+                            <p class="hero-subtitle">Learn SAP skills, build a strong career, and get expert guidance for training and certification.</p>
+                            <div class="hero-actions">
+                                <a href="SAP-FI.html" class="hero-btn hero-btn-primary">Explore Courses</a>
+                                <a href="tel:+919071284497" class="hero-btn hero-btn-secondary">Book a Call</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <div class="hero-media" aria-hidden="true" style="background-image: url('images/new/hall.jpeg');"></div>
+                <div class="hero-overlay" aria-hidden="true"></div>
+
+                <div class="container hero-content">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-xl-10 col-lg-11">
+                            <span class="hero-eyebrow">SAP Careers | Training, Certification & Placement Support</span>
+                            <h1>Build a Future-Ready SAP Career</h1>
+                            <p class="hero-subtitle">Gain job-ready SAP skills through expert mentorship, hands-on projects, and placement-focused learning at ATP Learning Hub.</p>
+                            <div class="hero-actions">
+                                <a href="SAP-FI.html" class="hero-btn hero-btn-primary">Explore Courses</a>
+                                <a href="tel:+919071284497" class="hero-btn hero-btn-secondary">Book a Call</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- end page title -->
+        <!-- end home hero -->
         <!-- start section -->
         <!-- <section class="bg-very-light-gray pt-20px pb-20px sm-pt-40px" data-anime='{ "opacity": [0, 1], "translateY": [0, 0], "easing": "easeOutQuad", "duration": 1000,"staggervalue": 300, "delay": 600 }'>
             <div class="container overlap-section">
@@ -422,7 +678,7 @@
                     <div class="col icon-with-text-style-07 transition-inner-all md-mb-30px">
                         <div class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                             <div class="feature-box-icon mb-30px"> 
-                                <img src="images/demo-hosting-home-icon-02.svg" class="h-50px" alt="">
+                                <img src="images/new/guy_with_laptop.jpg" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
                                 <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">SAP S/4HANA Finance Training</span>
@@ -442,7 +698,7 @@
                     <div class="col icon-with-text-style-07 transition-inner-all md-mb-30px">
                         <div class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                             <div class="feature-box-icon mb-30px"> 
-                                <img src="images/demo-hosting-home-icon-03.svg" class="h-50px" alt="">
+                                <img src="images/new/businesswoman-holding-digital-tablet.jpg" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
                                 <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">SAP EWM Training & Certification</span>
@@ -462,7 +718,7 @@
                     <div class="col icon-with-text-style-07 transition-inner-all xs-mb-30px">
                         <div class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                             <div class="feature-box-icon mb-30px"> 
-                                <img src="images/demo-hosting-home-icon-04.svg" class="h-50px" alt="">
+                                <img src="images/new/close-up-students-indoors.jpg" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
                                 <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">SAP MM Training & Certification</span>
@@ -482,7 +738,7 @@
                     <div class="col icon-with-text-style-07 transition-inner-all">
                         <div class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                             <div class="feature-box-icon mb-30px">
-                                <img src="images/demo-hosting-home-icon-05.svg" class="h-50px" alt="">
+                                <img src="images/new/men_working.jpg" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
                                 <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">SAP CO Training & Certification</span>
@@ -591,7 +847,7 @@
         </section>
         <!-- end section -->
         <!-- start section -->
-        <section class="cover-background section-dark bg-midnight-dark-blue" style="background-image: url('images/demo-hosting-home-02.png')" data-0-top="background-color:rgb(13,79,139);" data-center-bottom="background-color:rgb(30,111,182);">
+        <section class="section-dark bg-midnight-dark-blue" data-0-top="background-color:rgb(13,79,139);" data-center-bottom="background-color:rgb(30,111,182);">
             <div class="container"> 
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-8 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 900, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -822,11 +1078,11 @@
         <!-- start section -->
         <section class="overflow-hidden">
             <div class="container">
-                <div class="row align-items-center justify-content-center border-radius-8px p-4 xs-p-7 text-center text-lg-start g-0 cover-background" style="background-image: url('images/demo-hosting-home-03.jpg')" data-bottom-top="transform:scale(1.1, 1.1) translateY(30px);" data-top-bottom="transform:scale(1.0, 1.0) translateY(-30px);"> 
+                <div class="row align-items-center justify-content-center border-radius-8px p-4 xs-p-7 text-center text-lg-start g-0" style="background-color: #0d3b57;" data-bottom-top="transform:scale(1.1, 1.1) translateY(30px);" data-top-bottom="transform:scale(1.0, 1.0) translateY(-30px);"> 
                     <div class="col-lg-6 col-md-9 md-mb-10px icon-with-text-style-08">
                         <div class="feature-box feature-box-left-icon-middle overflow-hidden">
                             <div class="feature-box-icon feature-box-icon-rounded w-100px h-100px rounded-circle border border-2 border-color-transparent-white-light me-30px xs-me-25px">
-                                <img src="images/demo-hosting-home-icon.svg" class="w-50px h-50px" alt=""> 
+                                <img src="images/new/study.png" class="w-50px h-50px" alt=""> 
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <h5 class="d-inline-block fw-600 text-white mb-0">Ready to launch your SAP career with expert guidance?</h5> 
@@ -990,7 +1246,7 @@
         </section>
         <!-- end section -->
         <!-- start footer -->
-        <footer class="footer-dark bg-dark-blue pb-0 cover-background background-position-left-top" style="background-image: url('images/demo-hosting-footer-bg.jpg')">
+        <footer class="footer-dark bg-dark-blue pb-0 cover-background background-position-left-top" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('images/demo-hosting-footer-bg.jpg')">
             <div class="container">
                 <div class="row justify-content-center mb-5 md-mb-8 sm-mb-40px">
                     <!-- start footer column -->
@@ -1123,6 +1379,51 @@
                         });
                     });
                 });
+
+                var heroSlides = Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
+                var heroPrev = document.querySelector('.hero-arrow-prev');
+                var heroNext = document.querySelector('.hero-arrow-next');
+
+                if (heroSlides.length > 1) {
+                    var heroIndex = 0;
+                    var heroTimer = null;
+
+                    function showHeroSlide(nextIndex) {
+                        if (heroSlides[nextIndex].classList.contains('is-active')) {
+                            return;
+                        }
+
+                        var current = heroSlides[heroIndex];
+                        var next = heroSlides[nextIndex];
+
+                        current.classList.remove('is-active');
+                        current.classList.add('is-leaving');
+                        next.classList.add('is-active', 'is-entering');
+
+                        setTimeout(function() {
+                            current.classList.remove('is-leaving');
+                            next.classList.remove('is-entering');
+                            heroIndex = nextIndex;
+                        }, 800);
+                    }
+
+                    if (heroPrev) {
+                        heroPrev.addEventListener('click', function() {
+                            var prevIndex = (heroIndex - 1 + heroSlides.length) % heroSlides.length;
+                            showHeroSlide(prevIndex);
+                        });
+                    }
+
+                    if (heroNext) {
+                        heroNext.addEventListener('click', function() {
+                            showHeroSlide((heroIndex + 1) % heroSlides.length);
+                        });
+                    }
+
+                    heroTimer = setInterval(function() {
+                        showHeroSlide((heroIndex + 1) % heroSlides.length);
+                    }, 5000);
+                }
             });
         </script>
 </html>
